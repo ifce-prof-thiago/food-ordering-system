@@ -1,5 +1,5 @@
 package food.ordering.system.common.domain.valueobject
 
-import java.util.UUID
+import java.util.*
 
-class CustomerId(value: UUID) : BaseId<UUID >(value)
+class CustomerId(value: UUID) : BaseId<UUID>(value)

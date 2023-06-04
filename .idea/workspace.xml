@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17a1f95-456d-4007-bf57-6ba73cec261d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/event/DomainEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/CustomerId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/Money.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/ProductId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/RestaurantId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Order.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/OrderItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Product.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/OrderItemId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/StreetAddress.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/TrackingId.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/AggregateRoot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/AggregateRoot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/BaseEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/BaseEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/BaseId.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/BaseId.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order-service/order-domain">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-domain">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="food-ordering-system" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="food-ordering-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="food-ordering-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="food-ordering-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QURgnnBInngzvwbjT7wymsJo00" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/thiago/Documentos/learn/kotlin/food-ordering-system&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/order-service" />
+      <recent name="$PROJECT_DIR$/order-service/order-domain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-service/order-domain" />
+      <recent name="$PROJECT_DIR$/order-service" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="food.ordering.system.order.domain.core.valueobject" />
+      <recent name="food.ordering.system.common.domain.valueobject" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.MainKt (2)">
+    <configuration name="food-ordering-system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="food-ordering-system [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="food.ordering.system.common.domain.MainKt" />
+      <module name="food-ordering-system.common.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="food.ordering.system.order.domain.MainKt" />
+      <module name="food-ordering-system.order-service.order-domain.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="order.domain.MainKt" />
+      <module name="food-ordering-system.order-service.order-application.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt (2)" />
+        <item itemvalue="Kotlin.MainKt (1)" />
+        <item itemvalue="Gradle.food-ordering-system [clean]" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.food-ordering-system [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a17a1f95-456d-4007-bf57-6ba73cec261d" name="Changes" comment="" />
+      <created>1685406288102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685406288102</updated>
+      <workItem from="1685406289566" duration="331000" />
+      <workItem from="1685648485156" duration="28000" />
+      <workItem from="1685648520928" duration="844000" />
+      <workItem from="1685649367920" duration="17000" />
+      <workItem from="1685649387369" duration="70000" />
+      <workItem from="1685649459784" duration="2641000" />
+      <workItem from="1685652104513" duration="342000" />
+      <workItem from="1685652448931" duration="12000" />
+      <workItem from="1685652470230" duration="23000" />
+      <workItem from="1685652496303" duration="1619000" />
+      <workItem from="1685714773595" duration="3700000" />
+      <workItem from="1685738278501" duration="639000" />
+      <workItem from="1685743793025" duration="661000" />
+      <workItem from="1685745753252" duration="440000" />
+      <workItem from="1685820700209" duration="11035000" />
+      <workItem from="1685879170559" duration="3219000" />
+    </task>
+    <servers />
+  </component>
+</project>

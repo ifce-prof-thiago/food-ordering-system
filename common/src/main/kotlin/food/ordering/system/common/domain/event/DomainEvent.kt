@@ -1,4 +1,4 @@
 package food.ordering.system.common.domain.event
 
-interface DomainEvent {
+interface DomainEvent<T> {
 }
