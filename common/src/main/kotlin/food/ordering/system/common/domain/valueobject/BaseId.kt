@@ -1,6 +1,9 @@
 package food.ordering.system.common.domain.valueobject
 
+import java.util.*
+
 abstract class BaseId<T>(val value: T) {
+
     override fun hashCode(): Int {
         return value.hashCode()
     }

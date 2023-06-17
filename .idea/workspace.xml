@@ -5,25 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17a1f95-456d-4007-bf57-6ba73cec261d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/event/DomainEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/CustomerId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/Money.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/ProductId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/RestaurantId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Order.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/OrderItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Product.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/OrderItemId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/StreetAddress.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/TrackingId.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/AggregateRoot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/AggregateRoot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/BaseEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/entity/BaseEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/exception/DomainException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/OrderDomainService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/OrderDomainServiceImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/ValidateAndInitializerOrder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/Customer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/Order.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/OrderFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/OrderItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/Product.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/entity/Restaurant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/event/OrderCancelledEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/event/OrderCreatedEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/event/OrderPaidEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/exception/OrderDomainException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/valueobject/TrackingId.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/event/DomainEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/event/DomainEvent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/BaseId.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/BaseId.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/Money.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/Money.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderId.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/food/ordering/system/common/domain/valueobject/OrderId.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/order-domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Order.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/OrderItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/entity/Product.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/OrderItemId.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/valueobject/OrderItemId.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/StreetAddress.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/valueobject/StreetAddress.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/src/main/kotlin/food/ordering/system/order/domain/core/valueobject/TrackingId.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +96,7 @@
         <option value="Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -107,7 +117,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/thiago/Documentos/learn/kotlin/food-ordering-system&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/thiago/Documentos/learn/kotlin/food-ordering-system&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -120,34 +133,16 @@
       <recent name="$PROJECT_DIR$/order-service/order-domain" />
       <recent name="$PROJECT_DIR$/order-service" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="food.ordering.system.order.domain" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="food.ordering.system.order.domain.core.event" />
       <recent name="food.ordering.system.order.domain.core.valueobject" />
       <recent name="food.ordering.system.common.domain.valueobject" />
     </key>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt (2)">
-    <configuration name="food-ordering-system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
     <configuration name="food-ordering-system [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,9 +179,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="order.domain.MainKt" />
-      <module name="food-ordering-system.order-service.order-application.main" />
+    <configuration name="MainKt (3)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="food-ordering-system.order-service.order-domain.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="food.ordering.system.order.domain.core.MainKt" />
+      <module name="food-ordering-system.order-service.order-domain.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,10 +207,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt (2)" />
+        <item itemvalue="Kotlin.MainKt (4)" />
+        <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Gradle.food-ordering-system [clean]" />
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.food-ordering-system [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +237,22 @@
       <workItem from="1685743793025" duration="661000" />
       <workItem from="1685745753252" duration="440000" />
       <workItem from="1685820700209" duration="11035000" />
-      <workItem from="1685879170559" duration="3219000" />
+      <workItem from="1685879170559" duration="17795000" />
+      <workItem from="1686049493720" duration="33000" />
+      <workItem from="1686049537348" duration="1924000" />
+      <workItem from="1686225755742" duration="4559000" />
+      <workItem from="1686331112077" duration="1757000" />
+      <workItem from="1686336590938" duration="1840000" />
+      <workItem from="1686338708793" duration="120000" />
+      <workItem from="1686405188155" duration="6516000" />
+      <workItem from="1686433568550" duration="1850000" />
+      <workItem from="1686488952857" duration="6185000" />
+      <workItem from="1686838829212" duration="493000" />
+      <workItem from="1686839434609" duration="2961000" />
+      <workItem from="1686861099785" duration="1411000" />
+      <workItem from="1686864747631" duration="2108000" />
+      <workItem from="1686959285505" duration="1278000" />
+      <workItem from="1687013314660" duration="4126000" />
     </task>
     <servers />
   </component>
