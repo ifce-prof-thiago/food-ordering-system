@@ -9,4 +9,8 @@ internal data class RestaurantProperties(
     val products: List<Product>
 )
 
-class Restaurant internal constructor(props: RestaurantProperties) : AggregateRoot<RestaurantId>(props.id)
+class Restaurant internal constructor(private var props: RestaurantProperties) : AggregateRoot<RestaurantId>(props.id) {
+
+    val isActive
+        get() = props.active
+}

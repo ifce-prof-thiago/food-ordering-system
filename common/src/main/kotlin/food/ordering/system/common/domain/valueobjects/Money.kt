@@ -1,6 +1,5 @@
 package food.ordering.system.common.domain.valueobject
 
-
 import java.math.BigDecimal
 import java.math.RoundingMode
 
