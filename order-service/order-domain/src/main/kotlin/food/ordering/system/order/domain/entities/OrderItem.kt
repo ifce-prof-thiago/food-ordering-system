@@ -1,31 +1,26 @@
-package food.ordering.system.order.domain.entity
+package food.ordering.system.order.domain.entities
 
-import food.ordering.system.common.domain.entity.BaseEntity
-import food.ordering.system.common.domain.valueobject.Money
-import food.ordering.system.common.domain.valueobject.ProductId
-import food.ordering.system.order.domain.valueobject.OrderItemId
+import food.ordering.system.common.domain.entities.BaseEntity
+import food.ordering.system.common.domain.valueobjects.Money
+import food.ordering.system.common.domain.valueobjects.ProductId
+import food.ordering.system.order.domain.valueobjects.OrderItemId
 
 internal data class OrderItemProperties(
     val id: OrderItemId,
     val productId: ProductId,
-    val productPrice: Money,
-    val productName: String,
+    val price: Money,
+    val name: String,
     val quantity: Int
 )
 
 class OrderItem internal constructor(private var props: OrderItemProperties) : BaseEntity<OrderItemId>(props.id) {
 
     fun calculateSubTotal(): Money {
-        return productPrice * quantity
+        return price * quantity
     }
 
-    val productPrice: Money
-        get() = props.productPrice
-
-    val productName: String
-        get() = props.productName
-
-    val quantity: Int
-        get() = props.quantity
+    val price get() = props.price
+    val name get() = props.name
+    val quantity get() = props.quantity
 
 }

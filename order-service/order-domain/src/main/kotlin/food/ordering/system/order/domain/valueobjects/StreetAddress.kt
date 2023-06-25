@@ -1,6 +1,6 @@
-package food.ordering.system.order.domain.valueobject
+package food.ordering.system.order.domain.valueobjects
 
-import java.util.UUID
+import java.util.*
 
 data class StreetAddress(
     val id: UUID,

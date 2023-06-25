@@ -1,4 +1,4 @@
-package food.ordering.system.common.domain.valueobject
+package food.ordering.system.common.domain.valueobjects
 
 enum class OrderStatus {
     PENDING,

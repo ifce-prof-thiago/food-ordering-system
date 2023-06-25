@@ -1,9 +1,9 @@
-package food.ordering.system.order.application.track
+package food.ordering.system.order.application.usecases.track
 
 import food.ordering.system.common.domain.valueobjects.OrderStatus
 import java.util.*
 
-data class TrackOrderResponse(
+data class TrackOrderQueryResponse(
     val orderTrackingId: UUID,
     val orderStatus: OrderStatus,
     val failureMessages: List<String>

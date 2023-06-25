@@ -6,6 +6,5 @@ include("common")
 // Order Service
 include("order-service:order-domain")
 include("order-service:order-application")
-include("order-service:order-data-access")
 include("order-service:order-messaging")
 include("order-service:order-container")

@@ -1,19 +1,16 @@
-package food.ordering.system.order.application.create
+package food.ordering.system.order.application.usecases.create
 
 import java.util.*
 
-data class CreateOrderIn(
+data class CreateOrderInput(
     val customerId: UUID,
     val restaurantId: UUID,
-    val price: Number,
     val items: List<CreateOrderItem>,
     val address: CreateOrderAddress
 )
 
 data class CreateOrderItem(
     val productId: UUID,
-    val price: Number,
-    val name: String,
     val quantity: Int
 )
 

@@ -1,6 +1,6 @@
-package food.ordering.system.order.domain.valueobject
+package food.ordering.system.order.domain.valueobjects
 
-import food.ordering.system.common.domain.valueobject.BaseId
+import food.ordering.system.common.domain.valueobjects.BaseId
 import java.util.*
 
 class TrackingId(value: UUID) : BaseId<UUID>(value) {

@@ -1,7 +1,7 @@
-package food.ordering.system.order.domain.entity
+package food.ordering.system.order.domain.entities
 
-import food.ordering.system.common.domain.entity.AggregateRoot
-import food.ordering.system.common.domain.valueobject.RestaurantId
+import food.ordering.system.common.domain.entities.AggregateRoot
+import food.ordering.system.common.domain.valueobjects.RestaurantId
 
 internal data class RestaurantProperties(
     val id: RestaurantId,
@@ -10,7 +10,5 @@ internal data class RestaurantProperties(
 )
 
 class Restaurant internal constructor(private var props: RestaurantProperties) : AggregateRoot<RestaurantId>(props.id) {
-
-    val isActive
-        get() = props.active
+    val isActive get() = props.active
 }

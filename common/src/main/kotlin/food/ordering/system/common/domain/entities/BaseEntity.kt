@@ -1,6 +1,6 @@
-package food.ordering.system.common.domain.entity
+package food.ordering.system.common.domain.entities
 
-import food.ordering.system.common.domain.valueobject.BaseId
+import food.ordering.system.common.domain.valueobjects.BaseId
 
 abstract class BaseEntity<Id : BaseId<*>>(val id: Id) {
 

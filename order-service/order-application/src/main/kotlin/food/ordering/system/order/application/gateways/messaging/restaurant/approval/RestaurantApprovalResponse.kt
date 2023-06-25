@@ -1,4 +1,4 @@
-package food.ordering.system.order.application.message
+package food.ordering.system.order.application.gateways.messaging.restaurant.approval
 
 import food.ordering.system.common.domain.valueobjects.OrderApprovalStatus
 import java.time.Instant

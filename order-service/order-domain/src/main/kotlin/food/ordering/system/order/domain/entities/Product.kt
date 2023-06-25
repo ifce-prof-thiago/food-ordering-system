@@ -1,8 +1,8 @@
-package food.ordering.system.order.domain.entity
+package food.ordering.system.order.domain.entities
 
-import food.ordering.system.common.domain.entity.BaseEntity
-import food.ordering.system.common.domain.valueobject.Money
-import food.ordering.system.common.domain.valueobject.ProductId
+import food.ordering.system.common.domain.entities.BaseEntity
+import food.ordering.system.common.domain.valueobjects.Money
+import food.ordering.system.common.domain.valueobjects.ProductId
 
 internal data class ProductProperties(
     val id: ProductId,
@@ -11,11 +11,6 @@ internal data class ProductProperties(
 )
 
 class Product internal constructor(private var props: ProductProperties) : BaseEntity<ProductId>(props.id) {
-
-    val price: Money
-        get() = props.price
-
-    val name: String
-        get() = props.name
-
+    val name get() = props.name
+    val price get() = props.price
 }

@@ -1,5 +1,5 @@
-package food.ordering.system.order.domain.exception
+package food.ordering.system.order.domain.exceptions
 
-import food.ordering.system.common.domain.exception.DomainException
+import food.ordering.system.common.domain.exceptions.DomainException
 
 class OrderDomainException(message: String) : DomainException(message)

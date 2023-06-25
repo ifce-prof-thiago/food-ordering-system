@@ -1,6 +1,4 @@
-package food.ordering.system.common.domain.valueobject
-
-import java.util.*
+package food.ordering.system.common.domain.valueobjects
 
 abstract class BaseId<T>(val value: T) {
 

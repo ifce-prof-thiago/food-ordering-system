@@ -1,5 +1,5 @@
-package food.ordering.system.common.domain.valueobject
+package food.ordering.system.common.domain.valueobjects
 
-import java.util.UUID
+import java.util.*
 
 class RestaurantId(value: UUID) : BaseId<UUID>(value)

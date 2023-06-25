@@ -1,11 +1,11 @@
-package food.ordering.system.order.domain.entity
+package food.ordering.system.order.domain.entities
 
-import food.ordering.system.common.domain.entity.AggregateRoot
-import food.ordering.system.common.domain.valueobject.*
-import food.ordering.system.order.domain.exception.OrderDomainException
-import food.ordering.system.order.domain.valueobject.OrderItemId
-import food.ordering.system.order.domain.valueobject.StreetAddress
-import food.ordering.system.order.domain.valueobject.TrackingId
+import food.ordering.system.common.domain.entities.AggregateRoot
+import food.ordering.system.common.domain.valueobjects.*
+import food.ordering.system.order.domain.exceptions.OrderDomainException
+import food.ordering.system.order.domain.valueobjects.OrderItemId
+import food.ordering.system.order.domain.valueobjects.StreetAddress
+import food.ordering.system.order.domain.valueobjects.TrackingId
 
 internal data class OrderProperties(
     val id: OrderId,
@@ -25,9 +25,11 @@ class Order internal constructor(private var props: OrderProperties) : Aggregate
     }
 
     private fun validate() {
+
         if (totalPrice < Money.ZERO) {
             throw OrderDomainException("Total price cannot be negative")
         }
+
     }
 
     fun pay() {
@@ -59,7 +61,6 @@ class Order internal constructor(private var props: OrderProperties) : Aggregate
         )
 
         updateFailureMessages(failureMessages)
-
     }
 
     fun cancel(failureMessages: List<String>) {
@@ -82,18 +83,11 @@ class Order internal constructor(private var props: OrderProperties) : Aggregate
         )
     }
 
-    val trackingId
-        get() = props.trackingId
-    val orderStatus
-        get() = props.orderStatus
-    val failureMessages
-        get() = props.failureMessages
-
-    val totalPrice
-        get() =
-            props.items.fold(Money.ZERO) { acc, item -> acc + item.calculateSubTotal() }
-    val items
-        get() = props.items
+    val trackingId get() = props.trackingId
+    val orderStatus get() = props.orderStatus
+    val failureMessages get() = props.failureMessages
+    val totalPrice get() = props.items.fold(Money.ZERO) { acc, item -> acc + item.calculateSubTotal() }
+    val items get() = props.items
 }
 
 fun createOrderWith(
@@ -132,8 +126,8 @@ fun createOrderItemWith(
     val props = OrderItemProperties(
         id = id,
         productId = productId,
-        productPrice = productPrice,
-        productName = productName,
+        price = productPrice,
+        name = productName,
         quantity = quantity
     )
 

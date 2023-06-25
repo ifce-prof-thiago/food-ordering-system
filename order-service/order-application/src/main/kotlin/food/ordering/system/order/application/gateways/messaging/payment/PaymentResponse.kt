@@ -1,4 +1,4 @@
-package food.ordering.system.order.application.message
+package food.ordering.system.order.application.gateways.messaging.payment
 
 import food.ordering.system.common.domain.valueobjects.PaymentStatus
 import java.time.Instant
