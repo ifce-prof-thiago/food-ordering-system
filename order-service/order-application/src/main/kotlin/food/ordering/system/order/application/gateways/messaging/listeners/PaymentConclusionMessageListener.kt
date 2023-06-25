@@ -1,9 +1,14 @@
-package food.ordering.system.order.application.gateways.messaging.payment
+package food.ordering.system.order.application.gateways.messaging.listeners
 
 import food.ordering.system.common.domain.valueobjects.PaymentStatus
 import java.time.Instant
 
-data class PaymentResponse(
+interface PaymentConclusionMessageListener {
+    fun paymentCompleted(paymentConclusionPayload: PaymentConclusionPayload)
+    fun paymentCancelled(paymentConclusionPayload: PaymentConclusionPayload)
+}
+
+data class PaymentConclusionPayload(
     val id: String,
     val sagaId: String,
     val orderId: String,

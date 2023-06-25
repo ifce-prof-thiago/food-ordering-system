@@ -1,9 +1,14 @@
-package food.ordering.system.order.application.gateways.messaging.restaurant.approval
+package food.ordering.system.order.application.gateways.messaging.listeners
 
 import food.ordering.system.common.domain.valueobjects.OrderApprovalStatus
 import java.time.Instant
 
-data class RestaurantApprovalResponse(
+interface RestaurantApprovalMessageListener {
+    fun orderApproved(restaurantApprovalPayload: RestaurantApprovalPayload)
+    fun orderRejected(restaurantApprovalPayload: RestaurantApprovalPayload)
+}
+
+data class RestaurantApprovalPayload(
     val id: String,
     val sagaId: String,
     val orderId: String,

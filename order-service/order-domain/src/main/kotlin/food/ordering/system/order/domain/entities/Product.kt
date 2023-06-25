@@ -14,3 +14,13 @@ class Product internal constructor(private var props: ProductProperties) : BaseE
     val name get() = props.name
     val price get() = props.price
 }
+
+fun createProductWith(
+    productId: ProductId,
+    name: String,
+    price: Money
+) = ProductProperties(
+    id = productId,
+    name = name,
+    price = price
+).let(::Product)

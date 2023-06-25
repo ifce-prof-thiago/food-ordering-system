@@ -1,10 +1,10 @@
-package food.ordering.system.order.application.usecases.create
+package food.ordering.system.order.application.stories.track
 
 import food.ordering.system.common.domain.valueobjects.OrderStatus
 import java.util.*
 
-data class CreateOrderResponse(
+data class TrackOrderResponse(
     val orderTrackingId: UUID,
     val orderStatus: OrderStatus,
-    val message: String
+    val failureMessages: List<String>
 )

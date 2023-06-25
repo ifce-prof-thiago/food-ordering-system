@@ -3,7 +3,6 @@ package food.ordering.system.order.domain.entities
 import food.ordering.system.common.domain.entities.AggregateRoot
 import food.ordering.system.common.domain.valueobjects.*
 import food.ordering.system.order.domain.exceptions.OrderDomainException
-import food.ordering.system.order.domain.valueobjects.OrderItemId
 import food.ordering.system.order.domain.valueobjects.StreetAddress
 import food.ordering.system.order.domain.valueobjects.TrackingId
 
@@ -99,37 +98,25 @@ fun createOrderWith(
     trackingId: TrackingId = TrackingId.create(),
     orderStatus: OrderStatus = OrderStatus.PENDING,
     failureMessages: List<String> = emptyList()
-): Order {
-
-    val props = OrderProperties(
-        id = id,
-        customerId = customerId,
-        restaurantId = restaurantId,
-        deliveryAddress = deliveryAddress,
-        items = items,
-        trackingId = trackingId,
-        orderStatus = orderStatus,
-        failureMessages = failureMessages
-    )
-
-    return Order(props)
-}
+) = OrderProperties(
+    id = id,
+    customerId = customerId,
+    restaurantId = restaurantId,
+    deliveryAddress = deliveryAddress,
+    items = items,
+    trackingId = trackingId,
+    orderStatus = orderStatus,
+    failureMessages = failureMessages
+).let(::Order)
 
 fun createOrderItemWith(
-    id: OrderItemId,
     productId: ProductId,
-    productName: String,
-    productPrice: Money,
+    name: String,
+    price: Money,
     quantity: Int
-): OrderItem {
-
-    val props = OrderItemProperties(
-        id = id,
-        productId = productId,
-        price = productPrice,
-        name = productName,
-        quantity = quantity
-    )
-
-    return OrderItem(props)
-}
+) = OrderItemProperties(
+    productId = productId,
+    price = price,
+    name = name,
+    quantity = quantity
+).let(::OrderItem)
