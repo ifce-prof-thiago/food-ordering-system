@@ -11,7 +11,9 @@ class CreateOrderStoryImpl(
 ) : CreateOrderStory {
 
     override fun execute(input: CreateOrderInput): CreateOrderResponse {
+
         val orderCreatedEvent = createOrderHelper.persistOrder(input)
+
         log.info { "Order ${orderCreatedEvent.payload.id.value} created" }
 
         orderCreatedPaymentRequestMessagePublisher.publish(orderCreatedEvent)

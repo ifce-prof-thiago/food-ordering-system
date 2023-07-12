@@ -3,9 +3,8 @@ package food.ordering.system.order.application.stories.create
 import food.ordering.system.common.domain.valueobjects.Money
 import food.ordering.system.common.domain.valueobjects.ProductId
 import food.ordering.system.common.domain.valueobjects.RestaurantId
-import food.ordering.system.order.application.gateways.data.access.customers.queries.CustomerDataQuery
-import food.ordering.system.order.application.gateways.data.access.orders.commands.OrderDataCommand
-import food.ordering.system.order.application.gateways.data.access.restaurants.queries.RestaurantDataQuery
+import food.ordering.system.order.application.gateways.data.cqrs.customers.queries.CustomerDataQuery
+import food.ordering.system.order.application.gateways.data.cqrs.orders.commands.SaveOrderCommand
 import food.ordering.system.order.domain.OrderDomainService
 import food.ordering.system.order.domain.entities.Order
 import food.ordering.system.order.domain.entities.Restaurant
@@ -19,7 +18,7 @@ private val log = KotlinLogging.logger {}
 
 class CreateOrderHelper(
     private val orderDomainService: OrderDomainService,
-    private val orderDataCommand: OrderDataCommand,
+    private val saveOrderCommand: SaveOrderCommand,
     private val customerDataQuery: CustomerDataQuery,
     private val restaurantDataQuery: RestaurantDataQuery
 ) {
@@ -59,7 +58,7 @@ class CreateOrderHelper(
     }
 
     private fun saveOrder(order: Order) {
-        orderDataCommand.save(order)
+        saveOrderCommand.execute(order)
         log.info { "Order ${order.id.value} saved" }
     }
 
